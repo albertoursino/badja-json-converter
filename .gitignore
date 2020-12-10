@@ -4,3 +4,6 @@
 DAVIS
 extra_videos
 datasets
+images
+code/__pycache__
+annotation_set_512_256.h5
