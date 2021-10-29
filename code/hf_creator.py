@@ -6,7 +6,7 @@ import h5py
 import numpy as np
 import tqdm
 
-IMAGE_SIZE = (512, 256)
+IMAGE_SIZE = (512, 256)  # Resolution of the images in the annotation_set
 SKELETON_SIZE = 20
 HOME = 'C:/Users/Alberto Ursino/Desktop/IntellIj Local Files/Convert-BADJA-json/'
 
@@ -97,13 +97,11 @@ if __name__ == '__main__':
 
     hf = h5py.File(HOME + 'datasets/annotation_set_{}_{}.h5'.format(IMAGE_SIZE[0], IMAGE_SIZE[1]), 'w')
 
-    # Creating 'skeleton' dataset
-
+    # Creating 'skeleton' dataset. Make sure you have run the java file "skeleton_extractor" first.
     skeleton_hf = h5py.File(HOME + 'skeleton.h5', 'r')
     hf.create_dataset('skeleton', data=skeleton_hf['skeleton'])
 
     # Creating 'images' dataset
-
     urls = [HOME + 'extra_videos/rs_dog/segmentations/*.png', HOME + 'DAVIS/Annotations/Full-Resolution/dog/*.png',
             HOME + 'DAVIS/Annotations/Full-Resolution/dog-agility/*.png']
 
@@ -117,7 +115,6 @@ if __name__ == '__main__':
     print('images dataset created')
 
     # Creating 'annotations' and 'annotated' datasets
-
     none_matrix = np.zeros((num_images, SKELETON_SIZE, 2))
     for i in range(num_images):
         for j in range(SKELETON_SIZE):
@@ -126,6 +123,8 @@ if __name__ == '__main__':
     hf.create_dataset('annotations', dtype=np.float64, data=none_matrix)
     hf.create_dataset('annotated', shape=(num_images, SKELETON_SIZE), dtype=bool)
 
+    # Maybe you want to convert different json(s), well:
+    # change the json files inside the directory and modify this row of code.
     fill_annotations_ds([(1280, 720), (1920, 1080), (1920, 1080)],
                         [HOME + 'rs_dog.json', HOME + 'dog.json', HOME + 'dog_agility.json'], idx_dict, hf)
 
