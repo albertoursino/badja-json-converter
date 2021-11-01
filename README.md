@@ -10,10 +10,10 @@ With this application you to convert a *.json* file provided by [BADJA](https://
    ```sh
    git clone https://github.com/lettomobile/Convert-BADJA-json
    ```
-2. Download [DAVIS 2017 TrainVal Full-Resolution](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-Full-Resolution.zip) and extract files
-in this repository directory
+2. Download [DAVIS 2017 TrainVal Full-Resolution](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-Full-Resolution.zip) and extract the files
+in the main directory
 
-3. Adjust parameters e.g. [Images URL](https://github.com/lettomobile/Convert-BADJA-json/blob/59f5fda0e45c21e2bf4ba8480a4f27024ce7a0f3/code/write.py#L107), [Original Image Resolution](https://github.com/lettomobile/Convert-BADJA-json/blob/59f5fda0e45c21e2bf4ba8480a4f27024ce7a0f3/code/write.py#L129), ...
+3. Fix the parameters (e.g. [Images URL](https://github.com/lettomobile/Convert-BADJA-json/blob/59f5fda0e45c21e2bf4ba8480a4f27024ce7a0f3/code/write.py#L107), [Original Image Resolution](https://github.com/lettomobile/Convert-BADJA-json/blob/59f5fda0e45c21e2bf4ba8480a4f27024ce7a0f3/code/write.py#L129)), ...
 
 <!-- CONTRIBUTING -->
 ## Contributing
