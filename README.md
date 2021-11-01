@@ -6,7 +6,7 @@ With this application you to convert a *.json* file provided by [BADJA](https://
 <!-- GETTING STARTED -->
 ### Installation
 
-1. Clone the repo
+1. Clone this repository
    ```sh
    git clone https://github.com/lettomobile/Convert-BADJA-json
    ```
