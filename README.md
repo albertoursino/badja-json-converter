@@ -1,13 +1,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-With this application you to convert a *.json* file provided by [BADJA](https://github.com/benjiebob/BADJA) (containing annotations) into an *HDF5* dataset used on [DeepPoseKit](https://github.com/lettomobile/DeepPoseKit)
+With this application you to convert a *.json* file provided by [BADJA](https://github.com/benjiebob/BADJA) (containing annotations) into an *HDF5* dataset used on [DeepPoseKit](https://github.com/lettomobile/DeepPoseKit).
 
 <!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
 ### Installation
 
 1. Clone the repo
