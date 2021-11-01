@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This repository is used to transform json (containing annotations) provided by [BADJA](https://github.com/benjiebob/BADJA) into HDF5 datasets used by [DeepPoseKit](https://github.com/lettomobile/DeepPoseKit)
+With this application you to convert a *.json* file provided by [BADJA](https://github.com/benjiebob/BADJA) (containing annotations) into an *HDF5* dataset used on [DeepPoseKit](https://github.com/lettomobile/DeepPoseKit)
 
 <!-- GETTING STARTED -->
 ## Getting Started
