@@ -34,4 +34,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Alberto Ursino - [@github](https://github.com/lettomobile) - alberto.ursino@studenti.unipd.it
+[Alberto Ursino](https://github.com/albertoursino) - albertoursino98@gmail.com
